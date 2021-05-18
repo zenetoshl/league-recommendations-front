@@ -115,7 +115,7 @@ const ChampionRecommend = (props) => {
         ? error ? <Typography align="center" component="h2" variant="subtitle1"> Ocorreu um erro inesperado, tente novamente mais tarde. </Typography> 
         : <Typography align="center" component="h2" variant="subtitle1"> Envie seu nome de invocador para que possamos começar. </Typography>
         : cardsInfo.map((d) => (
-            <div style={{ backgroundImage: `url(${d.splashArt})`, width: '90%', height: '400px', backgroundRepeat: 'round', padding: '176px 0px', borderRadius: '5px', display: 'flex', flexDirection: 'row', alignItems: 'start'}}>
+            <div style={{ backgroundImage: `url(${d.splashArt})`, width: '90%', height: '400px', backgroundRepeat: 'round', padding: '40px 0px', borderRadius: '5px', display: 'flex', flexDirection: 'row', alignItems: 'start'}}>
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '0px 16px', width: '50%', height: '90%'}}>
                     <Typography className={classes.whiteText} gutterBottom variant="h3">
                         {d.name}

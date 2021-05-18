@@ -18,6 +18,7 @@ const useStyles = makeStyles(() => ({
   },
   mobileButtonsContainer: {
     display: 'flex',
+    width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: '18px',
