@@ -96,7 +96,7 @@ const ChampionRecommend = (props) => {
             <TextField className={classes.input} id="outlined-b" label="Digite seu nome de invocador" variant="outlined" value={summonerName} onChange={handleSummonerChange}/>
             <Button className={classes.send} onClick={()=> {
               setLoading(true)
-              axios.get(`http://191.232.241.13:5000/recommendation?summoner=${summonerName}`)
+              axios.get(`http://104.41.2.45:5000/recommendation?summoner=${summonerName}`)
               .then(res => {
                 const persons = res.data
                 console.log(persons)
@@ -115,7 +115,7 @@ const ChampionRecommend = (props) => {
         ? error ? <Typography align="center" component="h2" variant="subtitle1"> Ocorreu um erro inesperado, tente novamente mais tarde. </Typography> 
         : <Typography align="center" component="h2" variant="subtitle1"> Envie seu nome de invocador para que possamos começar. </Typography>
         : cardsInfo.map((d) => (
-            <div style={{ backgroundImage: `url(${d.splashArt})`, width: '90%', height: '400px', backgroundRepeat: 'no-repeat', padding: '176px 0px', borderRadius: '5px', display: 'flex', flexDirection: 'row', alignItems: 'start'}}>
+            <div style={{ backgroundImage: `url(${d.splashArt})`, width: '90%', height: '400px', backgroundRepeat: 'round', padding: '176px 0px', borderRadius: '5px', display: 'flex', flexDirection: 'row', alignItems: 'start'}}>
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '0px 16px', width: '50%', height: '90%'}}>
                     <Typography className={classes.whiteText} gutterBottom variant="h3">
                         {d.name}

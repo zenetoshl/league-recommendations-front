@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     margin: '0 auto',
     padding: '80px 24px',
     [theme.breakpoints.up('md')]: {
-      padding: '160px 24px'
+      padding: '40px 24px'
     }
   },
   buttons: {
@@ -41,10 +41,10 @@ const Header = (props) => {
     <div {...rest} className={classes.root}>
       <div className={classes.header}>
         <Typography align="center" gutterBottom variant="h1">
-          League Recommendations
+          League Recommend
         </Typography>
         <Typography align="center" component="h2" variant="subtitle1">
-          Seja bem-vindo ao League Recommendations! <br /> <br /> Aqui você pode receber recomendações de campeões para se jogar baseadas nas suas partidas anteriores, <br /> ou, se preferir, <br /> pode checar o seu nível de jogabilidade com o nosso modelo de predição de ranking. <br /> <br /> Use a barra superior para navegar entre as telas.
+          Seja bem-vindo ao League Recommend! <br /> <br /> Aqui você pode receber recomendações de campeões para se jogar baseadas nas suas partidas anteriores, <br /> ou, se preferir, <br /> pode checar o seu nível de jogabilidade com o nosso modelo de predição de ranking. <br /> <br /> Use a barra superior para navegar entre as telas.
         </Typography>
       </div>
     </div>
