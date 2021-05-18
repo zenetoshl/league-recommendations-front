@@ -96,7 +96,7 @@ const ChampionRecommend = (props) => {
             <TextField className={classes.input} id="outlined-b" label="Digite seu nome de invocador" variant="outlined" value={summonerName} onChange={handleSummonerChange}/>
             <Button className={classes.send} onClick={()=> {
               setLoading(true)
-              axios.get(`http://104.41.2.45:5000/recommendation?summoner=${summonerName}`)
+              axios.get(`http://191.239.247.63:5000/recommendation?summoner=${summonerName}`)
               .then(res => {
                 const persons = res.data
                 console.log(persons)
