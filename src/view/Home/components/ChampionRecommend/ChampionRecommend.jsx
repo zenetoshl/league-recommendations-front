@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, TextField, Button, Divider } from '@material-ui/core'
 import championsInfo from '../../../../utils/championsInfo'
+import axios from 'axios';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -65,7 +66,7 @@ const ChampionRecommend = (props) => {
   const [summonerName, setSummonerName] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
-  const [data, setData] = useState([111, 15, 2])
+  const [data, setData] = useState()
   const [cardsInfo, setCardsInfo] = useState()
   const classes = useStyles()
   const handleSummonerChange = (e) => {
@@ -92,8 +93,20 @@ const ChampionRecommend = (props) => {
           Recomendação de campeões
         </Typography>  
         <div className={classes.buttons}>
-            <TextField className={classes.input} id="outlined-basic" label="Digite seu nome de invocador" variant="outlined" value={summonerName} onChange={handleSummonerChange}/>
-            <Button className={classes.send} onClick={()=>console.log(cardsInfo)}>Enviar</Button>
+            <TextField className={classes.input} id="outlined-b" label="Digite seu nome de invocador" variant="outlined" value={summonerName} onChange={handleSummonerChange}/>
+            <Button className={classes.send} onClick={()=> {
+              setLoading(true)
+              axios.get(`http://191.232.241.13:5000/recommendation?summoner=${summonerName}`)
+              .then(res => {
+                const persons = res.data
+                console.log(persons)
+                setData(persons)
+              }).catch(err => {
+                setError(true)
+              }).then(()=>{
+                setLoading(false)
+              })
+            }}>Enviar</Button>
         </div> 
         <Divider className={classes.divider} />
 

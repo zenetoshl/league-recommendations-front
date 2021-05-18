@@ -51029,13 +51029,13 @@ export const championsInfo = {
             },
             "recommended": []
         },
-        "MonkeyKing": {
-            "id": "MonkeyKing",
+        "WuKong": {
+            "id": "WuKong",
             "key": "62",
             "name": "Wukong",
             "title": "o Macaco Rei",
             "image": {
-                "full": "MonkeyKing.png",
+                "full": "WuKong.png",
                 "sprite": "champion2.png",
                 "group": "champion",
                 "x": 240,
@@ -51138,7 +51138,7 @@ export const championsInfo = {
             },
             "spells": [
                 {
-                    "id": "MonkeyKingDoubleAttack",
+                    "id": "WuKongDoubleAttack",
                     "name": "Golpe Destruidor",
                     "description": "O próximo ataque de Wukong recebe Alcance de Ataque, causa dano adicional e reduz a Armadura do alvo por alguns segundos.",
                     "tooltip": "O próximo Ataque de Wukong e de seu <keywordMajor>Clone</keywordMajor> recebem {{ attackrangebonus }} de alcance, causam <physicalDamage>{{ bonusdamagett }} de Dano Físico adicional</physicalDamage> e removem <scaleArmor>{{ armorshredpercent*100 }}% da Armadura</scaleArmor> do alvo por {{ shredduration }}s.<br /><br />O Tempo de Recarga da Habilidade é reduzido em {{ cooldowndecrease }}s sempre que Wukong ou o <keywordMajor>Clone</keywordMajor> atingir um inimigo com um Ataque ou uma Habilidade.",
@@ -51272,7 +51272,7 @@ export const championsInfo = {
                     ],
                     "rangeBurn": "250/275/300/325/350",
                     "image": {
-                        "full": "MonkeyKingDoubleAttack.png",
+                        "full": "WuKongDoubleAttack.png",
                         "sprite": "spell7.png",
                         "group": "spell",
                         "x": 192,
@@ -51283,7 +51283,7 @@ export const championsInfo = {
                     "resource": "{{ cost }} de {{ abilityresourcename }}"
                 },
                 {
-                    "id": "MonkeyKingDecoy",
+                    "id": "WuKongDecoy",
                     "name": "Guerreiro Trapaceiro",
                     "description": "Wukong fica <font color='#91d7ee'>Invisível</font> e avança em uma direção, deixando para trás um clone que atacará inimigos próximos.",
                     "tooltip": "Wukong avança e fica <keywordStealth>Invisível</keywordStealth> por {{ stealthduration }}s, deixando para trás um <keywordMajor>Clone</keywordMajor> imóvel que permanece no lugar por {{ cloneduration }}s.<br /><br />O <keywordMajor>Clone</keywordMajor> imita a ultimate de Wukong e Ataca inimigos próximos a quem Wukong tenha causado dano recentemente, causando {{ clonedamagemod*100 }}% do dano normal.",
@@ -51415,7 +51415,7 @@ export const championsInfo = {
                     ],
                     "rangeBurn": "275",
                     "image": {
-                        "full": "MonkeyKingDecoy.png",
+                        "full": "WuKongDecoy.png",
                         "sprite": "spell7.png",
                         "group": "spell",
                         "x": 240,
@@ -51426,7 +51426,7 @@ export const championsInfo = {
                     "resource": "{{ cost }} de {{ abilityresourcename }}"
                 },
                 {
-                    "id": "MonkeyKingNimbus",
+                    "id": "WuKongNimbus",
                     "name": "Resplendor das Nuvens",
                     "description": "Wukong avança em direção ao inimigo-alvo e conjura imagens de si próprio para atacar inimigos próximos, causando dano aos atingidos.",
                     "tooltip": "Wukong avança em direção a um inimigo, conjurando <keywordMajor>Clones</keywordMajor> que imitam o avanço a até {{ extratargets }} inimigos próximos adicionais. Cada inimigo atingido sofre <magicDamage>{{ totaldamage }} de Dano Mágico</magicDamage>. Ele e seu <keywordMajor>Clone</keywordMajor> recebem <attackSpeed>{{ attackspeed*100 }}% de Velocidade de Ataque</attackSpeed> por {{ attackspeedduration }}s.<br /><br /><rules><span class=\"color8c8c8c\">Causa {{ totaldamagemonsters }} de dano a monstros.</span></rules>",
@@ -51560,7 +51560,7 @@ export const championsInfo = {
                     ],
                     "rangeBurn": "650",
                     "image": {
-                        "full": "MonkeyKingNimbus.png",
+                        "full": "WuKongNimbus.png",
                         "sprite": "spell7.png",
                         "group": "spell",
                         "x": 288,
@@ -51571,7 +51571,7 @@ export const championsInfo = {
                     "resource": "{{ cost }} de {{ abilityresourcename }}"
                 },
                 {
-                    "id": "MonkeyKingSpinToWin",
+                    "id": "WuKongSpinToWin",
                     "name": "Ciclone",
                     "description": "Wukong estende seu cajado e gira repetidamente, recebendo Velocidade de Movimento.<br><br>Inimigos atingidos sofrem dano e são arremessados ao ar.",
                     "tooltip": "Wukong recebe <speed>{{ movespeed*100 }}% de Velocidade de Movimento</speed> e gira seu cajado, <status>Arremessando ao ar</status> os inimigos próximos por {{ knockupduration }}s e causando <physicalDamage>{{ totaldamagett }} mais {{ percenthpdamagett }} da Vida máxima como Dano Físico adicional</physicalDamage> ao longo de {{ spinduration }}s.<br /><br />A Habilidade pode ser conjurada uma segunda vez dentro de {{ recastwindow }}s antes de entrar em Tempo de Recarga.",
@@ -51675,7 +51675,7 @@ export const championsInfo = {
                     ],
                     "rangeBurn": "315",
                     "image": {
-                        "full": "MonkeyKingSpinToWin.png",
+                        "full": "WuKongSpinToWin.png",
                         "sprite": "spell7.png",
                         "group": "spell",
                         "x": 336,
@@ -51690,7 +51690,7 @@ export const championsInfo = {
                 "name": "Pele de Pedra",
                 "description": "Wukong recebe Armadura e Regeneração de Vida máxima cumulativas quando luta contra Campeões e monstros.",
                 "image": {
-                    "full": "MonkeyKingStoneSkin.png",
+                    "full": "WuKongStoneSkin.png",
                     "sprite": "passive2.png",
                     "group": "passive",
                     "x": 240,
@@ -104750,7 +104750,7 @@ export const championsInfo = {
         "57": "Maokai",
         "11": "MasterYi",
         "21": "MissFortune",
-        "62": "MonkeyKing",
+        "62": "WuKong",
         "82": "Mordekaiser",
         "25": "Morgana",
         "267": "Nami",
