@@ -40,10 +40,10 @@ const Header = (props) => {
   return (
     <div {...rest} className={classes.root}>
       <div className={classes.header}>
-        <Typography align="center" gutterBottom variant="h1">
+        <Typography align="center" gutterBottom variant="h2">
           League Recommend
         </Typography>
-        <Typography align="center" component="h2" variant="subtitle1">
+        <Typography align="center" component="h3" variant="subtitle1">
           Seja bem-vindo ao League Recommend! <br /> <br /> Aqui você pode receber recomendações de campeões para se jogar baseadas nas suas partidas anteriores, <br /> ou, se preferir, <br /> pode checar o seu nível de jogabilidade com o nosso modelo de predição de ranking. <br /> <br /> Use a barra superior para navegar entre as telas.
         </Typography>
       </div>
